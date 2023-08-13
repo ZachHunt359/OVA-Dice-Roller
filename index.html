@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
+    <meta charset="utf-8">
     <title>OVA Dice Roller</title>
     <meta name="title" content="OVA Dice Roller">
     <meta name="description" content="A simple dice roller for the OVA TTRPG system">
     <meta name="keywords" content="OVA, dice, roller">
     <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <meta name="author" content="Zach Hunt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/OVADiceRoller.js"></script>
   </head>
 
   <body>
@@ -19,7 +22,7 @@
     <br>
     <label for="numDice">Number of Dice:</label>
     <span id="numDice">2</span>
-    <button onclick="rollDice()">Roll</button>
+    <button type="button" onclick="rollDice()">Roll</button>
     <br>
     <label for="result">Roll Result:</label><br>
     <textarea id="result" rows="4" cols="50" readonly></textarea><br>
