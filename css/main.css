@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+    color: white;
+}
+  
+span#numDice,
+input[type="number"] {
+    font-size: 20px;
+}
+
+input[type="number"] {
+    width: 75px;
+    margin-bottom: 10px;
+}
