@@ -1,14 +1,30 @@
 body {
     background-color: black;
     color: white;
-}
+  }
   
-span#numDice,
-input[type="number"] {
+  span#numDice,
+  input[type="number"] {
     font-size: 20px;
-}
-
-input[type="number"] {
+    text-align: center;
+  }
+  
+  input[type="number"] {
     width: 75px;
     margin-bottom: 10px;
-}
+  }
+  
+  div#resultDiv {
+    border: 1px solid white;
+    margin: 5px 0px;
+    padding: 5px 5px;
+    max-width: 400px;
+    white-space: pre-line;/* Handling line breaks in output */
+  }
+  
+  span.winningDice {
+    font-weight: bold;
+    font-size: 150%;
+    color: Lime;
+  }
+  
