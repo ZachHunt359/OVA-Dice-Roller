@@ -96,16 +96,18 @@ function rollDice() {
     element.innerHTML = modifiedContent;
   }
 
-const input = $('input[id=bonuses]')
+$(document).ready(function() {
+  const input = $('input[id=bonuses]')
 
-const increment = () => {
-  input.val(Number(input.val()) + 1)
-}
-const decrement = () => {
-  input.val(Number(input.val()) - 1)
-}
+  const increment = () => {
+    input.val(Number(input.val()) + 1)
+  }
+  const decrement = () => {
+    input.val(Number(input.val()) - 1)
+  }
 
-$('.spinner.increment').click(increment)
-$('.spinner.decrement').click(decrement)
-$('.spinner.increment').click(updateNumDice)
-$('.spinner.decrement').click(updateNumDice)
+  $('.spinner.increment').click(increment)
+  $('.spinner.decrement').click(decrement)
+  $('.spinner.increment').click(updateNumDice)
+  $('.spinner.decrement').click(updateNumDice)
+});
